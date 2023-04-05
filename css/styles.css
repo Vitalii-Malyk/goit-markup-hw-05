@@ -120,24 +120,21 @@ body {
   gap: 40px;
 }
 
-.site-nav .link.portfolio {
+.score {
   position: relative;
 }
-.site-nav .link.portfolio::after {
+.score::after {
   content: "";
   position: absolute;
+  bottom: -27px;
   display: block;
-  width: 66px;
+  width: 100%;
   height: 4px;
   background: var(--hover-focus-color);
   border-radius: 2px;
-  margin-top: 20px;
 }
 
-.site-nav .link.studio {
-  position: relative;
-}
-.site-nav .link.studio::after {
+_ .site-nav .link.studio::after {
   content: "";
   position: absolute;
   display: block;
@@ -472,31 +469,27 @@ body {
   position: fixed;
   right: 24px;
   top: 24px;
-
+}
+.container-close-modal .button {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
   width: 24px;
   height: 24px;
-
+  cursor: pointer;
   background: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  color: #2e2f42;
+  transition: fill var(--transition-main),
+    background-color var(--transition-main);
 }
 
-.close-modal {
-  position: fixed;
-  width: 8px;
-  height: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.close-modal img {
-  display: block;
-  width: 100%;
-  height: 100%;
+.container-close-modal .button:hover,
+.container-close-modal .button:focus {
+  fill: #ffffff;
+  background-color: var(--hover-focus-color);
 }
 
 /*!-------------------------------- ПОРТФОЛІО----------------------------- */
