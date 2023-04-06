@@ -609,8 +609,7 @@ body {
   border-radius: 4px;
 
   transition: color var(--transition-main),
-    background-color var(--transition-main), box-shadow var(--transition-main),
-    border var(--transition-main);
+    background-color var(--transition-main), box-shadow var(--transition-main);
 }
 .filters {
   margin-bottom: 72px;
